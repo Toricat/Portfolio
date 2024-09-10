@@ -3,8 +3,8 @@
 
 const Section3 = () => {
   return (
-    <section className="h-screen flex items-center justify-center bg-blue-500">
-      <h1 className="text-white text-4xl">Section 1</h1>
+    <section id="section3" className="h-screen flex items-center justify-center bg-red-500">
+      <h1 className="text-white text-4xl">Section 3</h1>
     </section>
   );
 };

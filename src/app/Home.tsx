@@ -1,21 +1,29 @@
+//@ts-ignore
+import React, { useRef } from "react";
+//@ts-ignore
+import { motion, useScroll, useTransform, MotionValue, useSpring } from "framer-motion";
+import "@/styles/index.css";
+
+
 import Section1 from '@/components/home/section1';
 import Section2 from '@/components/home/section2';
 import Section3 from '@/components/home/section3';
 
-const Home = () => {
+
+
+
+const Home: React.FC = () => {
+
+
   return (
-    <div className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth ">
-      <div className="snap-start h-screen">
-        <Section1 />
-      </div>
-      <div className="snap-start h-screen">
-        <Section2 />
-      </div>
-      <div className="snap-start h-screen">
-        <Section3 />
-      </div>
-    </div>
+    <>
+      <Section1 />
+      <Section2 />
+      <Section3 />  
+
+    </>
+
   );
-};
+}
 
 export default Home;
